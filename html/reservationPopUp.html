@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        #myModal1{
+            border: 3px solid #000;
+            width: fit-content;
+        }
+        #myModal1--hidden{
+            display: none;
+        }
+        #myModal1 .modal-body{
+            padding: 0;
+        }
+        #myModal1 .modal-dialog{
+            max-width: 800px;
+        }
+        #myModal1 .formWrap{
+            padding: 35px 45px;
+            text-align: center;
+        }
+        #myModal1 h1{
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        #myModal1 hr{
+            width: 50px;
+            height: 2px;
+            background: #ff5722;
+            border: none;
+        }
+        #myModal1 form{
+            margin-top: 35px;
+        }
+        #myModal1 input{
+            width: 100%;
+            height: 45px;
+            padding: 0 10px;
+            border: 1px solid #e2e2e2;
+            margin-bottom: 10px;
+        }
+        #myModal1 select{
+            width: 100%;
+            height: 45px;
+            padding: 0 10px;
+            border: 1px solid #e2e2e2;
+            margin-bottom: 10px;
+        }
+        #myModal1 input:focus{
+            outline: #ff5722;
+            border-color: #ff5722;
+        }
+        #myModal1 .submit{
+            background: #ff5722;
+            color: #fff;
+            border: none;
+        }
+
+
+    </style>
+
+    
+</head>
+<body>
+        <div class="modal animated bounceIn" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div  class="col-md-6 p-0">
+                                <div class="formWrap">
+                                    <h1>Make a Reservation</h1>
+                                    <!-- <p><small>Get more ideas & inspiration in your inbox</small></p> -->
+                                    <hr>
+                                    <form >
+                                        <div>
+                                        <label for="date"></label>
+                                            <input type="date" id="date" name="trip-start" value="2021-04-29" min="2021-04-28" max="2021-12-31">
+                                        </div>
+                                        <label for="time"></label>
+                                        <select id="time" name="time">
+                                            <option value="none" disabled selected hidden>Time</option>
+                                            <option value="one">7:00pm</option>
+                                            <option value="two">7:15pm</option>
+                                            <option value="three">7:30pm</option>
+                                            <option value="four">7:45pm</option>
+                                            <option value="five">8:00pm</option>
+                                            <option value="six">8:15pm</option>
+                                            <option value="more">8:30pm</option>
+                                        </select>
+                                        <label for="people"></label>
+                                            <select id="people" name="people">
+                                                <option value="none" disabled selected hidden>Number of People</option>
+                                                <option value="one">1 Person</option>
+                                                <option value="two">2 People</option>
+                                                <option value="three">3 People</option>
+                                                <option value="four">4 People</option>
+                                                <option value="five">5 People</option>
+                                                <option value="six">6 People</option>
+                                                <option value="more">More</option>
+                                            </select>
+
+                                        <input class="submit" type = "submit" value="Sign Up">   
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+            <script>
+                $(window).on('load', function(){
+                    setTimeout(function(){
+                        $('#myModal').modal('show')
+                    },1000)
+                })
+            </script>
+        </div>
+    </div>
+</body>
+</html>

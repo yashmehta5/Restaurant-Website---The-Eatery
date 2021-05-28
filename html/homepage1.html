@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content=" width=device-width,  initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />  
+
+        <title>The Eatery</title>
+       
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/2550a92b94.js" crossorigin ="anonymous"></script>
+
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.
+        css">
+        
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         
+        <!-- icon Stylesheet -->
+
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/menustyle.css">
+        <link rel="stylesheet" href="../css/menuStyleY.css">
+        <link rel="stylesheet" href="../css/Style_Contact.css">
+        <link rel="stylesheet" href="../css/style_reservation.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link rel="stylesheet" href="../css/anim1.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+
+
+
+        <!-- <link rel="stylesheet" href="Style_Contact.css">
+        <link rel="stylesheet" href="style_reservation.css">      
+        <link rel="stylesheet" href="anim1.css">
+        <link rel="stylesheet" href="anim2.css">
+        <link rel="stylesheet" href="responsive.css"> -->
+
+        <style>
+        df-messenger {
+            --df-messenger-bot-message: #ff5722;
+            --df-messenger-button-titlebar-color: #ff5722;
+            --df-messenger-chat-background-color: #fff;
+            --df-messenger-font-color: #fff;
+            --df-messenger-user-message: #2e5090;
+
+            --df-messenger-send-icon: #2e5090;
+        }
+    </style>
+
+    </head>
+
+
+    <body>
+
+            <script type="text/javascript">
+                function toggle(){
+                    var blur = document.getElementById('fullPage');
+                    blur.classList.toggle('active')
+                }
+            </script>
+
+
+        
+            <script id = "chatbot "src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+            <df-messenger
+            intent="WELCOME"
+            chat-title="DaTalkBot"
+            agent-id="ab5c0e17-7960-4ba1-bf67-ce558a86ae6f"
+            language-code="en"
+            ></df-messenger>
+
+                                            <!-- END OF CHATBOT CODE -->
+
+            <div class="modal animated bounceIn" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6 p-0">
+                                    <img src="https://images.pexels.com/photos/3617467/pexels-photo-3617467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                                </div>
+                                <div class="col-md-6 p-0">
+                                    <div class="formWrap">
+                                        <h1>Sign up for New Updates</h1>
+                                        <p><small>Get more ideas & inspiration in your inbox</small></p>
+                                        <hr>
+                                        <form>
+                                            <input type = "text" class="emailSignUp" placeholder="Email Address">
+                                            <input type = "password" placeholder="Password">
+                                            <input class="submit" type = "submit" value="Sign Up">             
+                                                            
+                                        </form>
+                                        <h6>Have an account? <a href="#">Log-in</a></h6>
+                                        <h5>Social Sign-In</h5>
+                                        <hr>
+                                        <p><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                            <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                            <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+            <script>
+                $(window).on('load', function(){
+                    setTimeout(function(){
+                        $('#myModal').modal('show')
+                    },1000)
+                })
+            </script>
+                                            <!-- END OF SIGNUP -->
+
+            <div class="modal animated bounceIn" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div  class="col-md-6 p-0">
+                                    <div class="formWrap">
+                                        <h1>Make a Reservation</h1>
+                                        <!-- <p><small>Get more ideas & inspiration in your inbox</small></p> -->
+                                        <hr>
+                                        <form >
+                                            <div>
+                                            <label for="date"></label>
+                                                <input type="date" id="date" name="trip-start" value="2021-04-29" min="2021-04-28" max="2021-12-31">
+                                            </div>
+                                            <label for="time"></label>
+                                            <select id="time" name="time">
+                                                <option value="none" disabled selected hidden>Time</option>
+                                                <option value="one">7:00pm</option>
+                                                <option value="two">7:15pm</option>
+                                                <option value="three">7:30pm</option>
+                                                <option value="four">7:45pm</option>
+                                                <option value="five">8:00pm</option>
+                                                <option value="six">8:15pm</option>
+                                                <option value="more">8:30pm</option>
+                                            </select>
+                                            <label for="people"></label>
+                                                <select id="people" name="people">
+                                                    <option value="none" disabled selected hidden>Number of People</option>
+                                                    <option value="one">1 Person</option>
+                                                    <option value="two">2 People</option>
+                                                    <option value="three">3 People</option>
+                                                    <option value="four">4 People</option>
+                                                    <option value="five">5 People</option>
+                                                    <option value="six">6 People</option>
+                                                    <option value="more">More</option>
+                                                </select>
+
+                                            <input class="submit" type = "submit" value="Sign Up">   
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        var modal = document.getElementById("myModal1");
+        var btn = document.getElementById("getPopUpOneSpan");
+
+        btn.onclick = function(){
+            modal.style.display = "block";
+        }
+
+        window.onclick = function(event){
+            if(event.target == modal){
+                modal.style.display = "none";
+            }
+        }       
+        
+        // document.getElementById('getPopUpOne').addEventListener('click',function(){
+        //     document.querySelector('myModalentire').style.display = 'flex'
+
+//         const open = document.getElementById('getPopUpOne');
+//         const model_container = document.getElementById('modal-dialog');
+
+// open.addEventListener('click',()=>{
+//   model_container.classList.add('show');
+// })
+    </script>
+
+               
+                                            <!-- END OF RESERVATION POPUP -->
+
+                                            <script src="script">
+                                                var nav = document.getElementById('navOne');
+                                                window.onscroll = function (){
+                                                    if(window.pageYOffset>100){
+                                                    nav.style.position = "fixed"
+                                                    nav.style.top = 0;
+                                                    } else{
+                                                        box.style.position = "absolute"
+                                                        box.style.top = 100;
+                                                    }
+                                                }
+                                            </script>
+
+            <div class = "front">
+                <div class="navbar" id="navOne">
+                    <ul class="logo"> 
+                        <li><img src="../images/eatery_logo_resized.png"></li>
+                    </ul>
+                    <ul>
+                        <li><a class = "active" href="#">HOME</a></li>
+                        <li><a href="#aboutpageID">ABOUT US</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="#team">TEAM</a></li>
+                        <li><a href="#gallery">GALLERY</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#reservation">RESERVATION</a></li>
+                        <li class="ReserveNavbarText"><a href="#">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="heady">
+                    <div class="wrapper">
+                        <div class="static-txt">Savour the Moment with</div>
+                        <ul class="dynamic-txts">
+                            <li><span>Family</span></li>
+                            <li><span>Friends</span></li>
+                            <li><span>Colleagues</span></li> 
+                        </ul>
+                    </div>                
+                </div>
+            
+                <div class="homepage2">
+                    <p>Bliss on a Plate</p>
+                    <a href="#Rpage">Book my Table</a>
+                </div>
+            </div>
+
+
+                <!-- <div class="homepage3">
+                    <a href="#">Book my Table</a>
+                    <script type="text/javascript">
+                        const buttons = document.querySelectorAll('a')
+                        buttons.forEach(btn => {
+                            btn.addEventListener('click',function(e){
+                                let x = e.clientX - e.target.offsetLeft;
+                                let y = e.clientY - e.target.offsetTop;
+
+                                let ripples = document.createElement('span');
+                                ripples.style.left = x + 'px';
+                                ripples.style.top = y + 'px';
+                                this.appendChild(ripples);
+
+                                setTimeOut(() =>{
+                                    ripples.remove()   
+                                },1000);
+                            })
+                        })
+                    </script>
+                </div> -->
+
+
+
+                                                <!-- END OF HOME PAGE -->
+
+                <div id = "aboutpageID" class="about">
+                    <h1 >About Us</h1>
+                    <h3>IT STARTED QUITE SIMPLY LIKE THIS....</h3>
+                    <p>
+                        Grills has developed to incorporate four superb takeout areas in New Delhi with additional to come sooner rather than later. Our group takes pride in the way that we can furnish our new and faithful clients with extraordinary tasting Indian-roused nourishment that is not normal for that at some other Indian eatery you visit. We perceive that a few people are as yet searching for the run of the mill Indian nourishment, and that is fine with us.
+                    </p>
+                    <span class="bigCircleImage1"></span>  
+                    <span class="smallCircleImage"></span>    
+            </div>
+    
+    
+                                                <!-- END OF ABOUT PAGE -->
+            <div class="MenuFin">
+                <div class="MenuPage">
+                    <div class="title">
+                        <h4><span>fresh food for good health</span>our menu</h4>
+                    </div>
+                    <div class="menu">
+                        <div class="single-menu">
+                            <img src="../images/Garlic_1_130x130.jpg" alt="">
+                            <div class="menu-content">
+                                <h4>GARLIC BREAD<span>Rs.150</span></h4>
+                                <p>Freshly Baked Garlic Bread stuffed with camembert cheese, sweet corns & tangy and spicy jalapeños.</p>
+                            </div>
+                        </div>
+                        <div class="single-menu">
+                            <img src="../images/Mixed_salad_130x130.jpg" alt="">
+                            <div class="menu-content">
+                                <h4>MIXED SALAD<span>Rs250</span></h4>
+                                <p>Mix Salad is a lovely medley of grilled chicken, lettuce leaves and cheese, tossed in a flavoursome vinaigrette. With addition of almonds.</p>
+                            </div>
+                        </div>
+                        <div class="single-menu">
+                            <img src="../images/Wings_new.jpg" alt="">
+                            <div class="menu-content">
+                                <h4>BBQ CHICKEN WINGS<span>Rs.400</span></h4>
+                                <p>Is an unbreaded chicken wing section  that is generally deep-fried and then coated or dipped in a sauce consisting of a vinegar-based cayenne pepper hot sauce and melted butter prior to serving.</p>
+                            </div>
+                        </div>
+                        <div class="single-menu">
+                            <img src="../images/paneer-tikka_new.jpeg" alt="">
+                            <div class="menu-content">
+                                <h4>Panner Tikka<span>Rs.350</span></h4>
+                                <p>Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor.</p>
+                            </div>
+                        </div>
+                        <div class="single-menu">
+                            <img src="../images/Spring_Roll_130x130.jpg" alt="">
+                            <div class="menu-content">
+                                <h4>Spring Roll<span>Rs.300</span></h4>
+                                <p>A type of savoury food consisting of shredded vegetables wrapped in a pancake made from rice flour and then fried.</p>
+                            </div>
+                        </div>
+                        <div class="single-menu">
+                            <img src="../images/Mughlai-Chicken-Biryani_2_130x130.jpg" alt="">
+                            <div class="menu-content">
+                                <h4>Chicken Biryani<span>Rs.300</span></h4>
+                                <p>Freshly Baked Garlic Bread stuffed with camembert cheese, sweet corns & tangy and spicy jalapeños.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                                <!-- END OF MENU PAGE -->
+
+                <div class="tPage">                                   
+                    <div class="teamPageFinal">
+                        <h1>Our Team</h1>
+                        <div class="containerTeam"> 
+                            <div class="ourTeam">
+                                <div class="pic">
+                                    <img src="../images/staff-01.jpg" alt="">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">Yash</h3>
+                                    <span class="post">Designer</span>
+                                    <p class="post1">Motivated individual with a positive attitude, good communication skills and aptitude to learn & explore latest technologies & innovations.</p>
+                                </div>
+                                <ul class="social">
+                                    <li><a href="#" class="fab fa-facebook"></a></li>
+                                    <li><a href="#" class="fab fa-twitter"></a></li>
+                                    <li><a href="#" class="fab fa-instagram"></a></li>
+                                    <li><a href="#" class="fab fa-linkedin"></a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Team-2 -->
+                            <div class="ourTeam">
+                                <div class="pic">
+                                    <img src="../images/staff-02.jpg" alt="">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">Mehta</h3>
+                                    <span class="post">Developer</span>
+                                    <p class="post1">Motivated individual with a positive attitude, good communication skills and aptitude to learn & explore latest technologies & innovations.</p>
+                                </div>
+                                <ul class="social">
+                                    <li><a href="#" class="fab fa-facebook"></a></li>
+                                    <li><a href="#" class="fab fa-twitter"></a></li>
+                                    <li><a href="#" class="fab fa-instagram"></a></li>
+                                    <li><a href="#" class="fab fa-linkedin"></a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Team-3 -->
+                            <div class="ourTeam">
+                                <div class="pic">
+                                    <img src="../images/staff-03.jpg" alt="">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">Vaiebhavv</h3>
+                                    <span class="post">Coordinator</span>
+                                    <p class="post1">An Indian culinary legend, chef Vaiebhavv Baid is a pioneer in the world of food. His humble beginnings have proved to be the stepping stones of his success in the food and beverage industry, encouraging him to spread his wings. </p>
+                                </div>
+                                <ul class="social">
+                                    <li><a href="#" class="fab fa-facebook"></a></li>
+                                    <li><a href="#" class="fab fa-twitter"></a></li>
+                                    <li><a href="#" class="fab fa-instagram"></a></li>
+                                    <li><a href="#" class="fab fa-linkedin"></a></li>
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            <!-- <section class="Teamsection">
+
+                    <div class="TeamPage">
+                        <div class="Teamcontainer">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="imgBx"><img src="staff-01.jpg"></div>
+                                    <div class="contentBx">
+                                        <h3>Yash Gautam <br> <span>Creative Designer</span></h3>
+                                    </div>
+                                </div>
+                                <ul class="sci">
+                                    <li style="--i:1">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li style="--i:1">
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li style="--i:1">
+                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </li>                        
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="content">
+                                    <div class="imgBx"><img src="staff-02.jpg"></div>
+                                    <div class="contentBx">
+                                        <h3>Yash Gautam <br> <span>Creative Designer</span></h3>
+                                    </div>
+                                </div>
+                                <ul class="sci">
+                                    <li style="--i:1">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li style="--i:1">
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li style="--i:1">
+                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </li>                        
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="content">
+                                    <div class="imgBx"><img src="staff-03.jpg"></div>
+                                    <div class="contentBx">
+                                        <h3>Yash Gautam <br> <span>Creative Designer</span></h3>
+                                    </div>
+                                </div>
+                                <ul class="sci">
+                                    <li style="--i:1">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li style="--i:1">
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li style="--i:1">
+                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </li>                        
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
+                                                <!-- END OF TEAM PAGE -->
+
+                                               
+
+                <div class="Gallery">
+                    <header>
+                        <h1>Our Gallery</h1>
+                    </header>
+
+                    <hr>
+
+                    <main>
+                        <div class="Gallerybox1"> <img class="image" src="../images/dal_bhukara_resized.jpg" ></div>
+                            <div class="content">
+                                <!-- <div>
+                                    <h2>Dal Bhukara</h2>
+                                    <p>dejbjdcbdkjcbj jackd</p>
+                                </div>  -->
+                            </div>
+                        <div class="Gallerybox2"> <img class="image" src="../images/shahi_paneer_resized.png" ></div>
+                        <div class="Gallerybox3"> <img class="image" src="../images/Chicken-Spring_resized.jpg"></div>
+                        <div class="Gallerybox4"> <img class="image" src="../images/chilli_potato_resized.jpg"></div>
+                        <div class="Gallerybox5"> <img class="image" src="../images/chicken-malai-tikka_resized.jpg"></div>
+                        <div class="Gallerybox6"> <img class="image" src="../images/wine_resized.jpg"></div>
+                        <div class="Gallerybox7"> <img class="image" src="../images/blue-lagoon-2.0_resized.jpg"></div>
+                        <div class="Gallerybox8"> <img class="image" src="../images/dessert-2_resized.jpg"></div>
+                        <div class="Gallerybox9"> <img class="image" src="../images/dessert-1_resized.jpg"></div>
+                        <div class="Gallerybox10"> <img class="image" src="../images/dessert-3_resized.jpg"></div>
+
+                    </main>               
+                </div>         
+
+                                            <!-- END OF Gallery -->
+        
+                    <div class="blog-page">
+                        <h1 class="ourblog">OUR BLOG</h1>
+                
+                        <div class="box">
+                            <div class="image1"></div>   
+                            <h2 class="heading">Latest Recipe Just In!</h2>
+                            <h4 class="text">April 8, 2021</h4>
+                        </div>
+                        <div class="box1">
+                            <div class="image2"></div>   
+                            <h2 class="heading">Ande ka Funda!</h2>
+                            <h4 class="text">01 April,2021</h4>
+                        </div>
+                        <div class="box2">
+                            <div class="image3"></div>   
+                            <h2 class="heading">Khane ka Khajana!</h2>
+                            <h4 class="text">04 March,2021</h4>
+                        </div>
+                        <div class="box3">
+                            <div class="image4"></div>   
+                            <h2 class="heading">The Art of Baking!</h2>
+                            <h4 class="text">01 April,2021</h4>
+                        </div>
+                    </div>
+                                            <!-- END OF BLOG PAGE -->
+
+                <!-- <script src="script.js"></script> -->
+
+                <div class="reservationPage" id="Rpage">
+                    <h1>Reservations</h1>
+                    <div class="reserveBoxOne">
+                        <p>Make a Reservation</p>
+                        <div class="reservationDate">
+                            <div class="dateIcon">
+                                <img src="../images/calendar_icon_resized.png">
+                            </div>
+                            <p class="ResAlign">Apr 5 2021</p>
+                        </div>
+                        <div class="reservationTime">
+                            <div class="TimeIcon">
+                                <img src="../images/clock_icon_resized.png">
+                            </div>
+                            <p class="ResAlign">8:00 pm</p>
+                        </div>
+                        <div class="customerNo">
+                            <div class="customerIcon">
+                                <img src="../images/person_icon_resized.png">
+                            </div>
+                            <p class="ResAlign">2 people</p>
+                        </div>
+                        <div class="bookTable">
+                            <a href="reservation.html" id="getPopUpOne"><span id="getPopUpOne">Find a Table</span></a>
+                            <!-- <button id="show-modal">Find Table</button> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="modal animated bounceIn" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog2" role="document">
+                        <div class="modal-content2">
+                            <div class="modal-body2">
+                                <div class="row2">
+                                    <div class="col-md-6 p-0">
+                                        <div class="formWrap2">
+                                            <h1>Reservation at the Eatery</h1>
+                                            <div class="black">
+                                                <div class="blackContent">
+                                                    <h2>
+                                                        <span class="highlight">1. Find Table</span>
+                                                        <span>2. Your Details</span>
+                                                    </h2>
+                                                    <hr>
+
+                                                    <form>
+                                                        <label for="people"></label>
+                                                        <select id="people" name="people">
+                                                            <option value="none" disabled selected hidden>Number of People</option>
+                                                            <option value="one">1 Person</option>
+                                                            <option value="two">2 People</option>
+                                                            <option value="three">3 People</option>
+                                                            <option value="four">4 People</option>
+                                                            <option value="five">5 People</option>
+                                                            <option value="six">6 People</option>
+                                                            <option value="more">More</option>
+                                                        </select>
+                                                            <label for="date"></label>
+                                                                <input type="date" id="date" name="trip-start" value="2021-04-29" min="2021-04-28" max="2021-12-31">
+                                                            <label for="time"></label>
+                                                            <select id="time" name="time">
+                                                                <option value="none" disabled selected hidden>Time</option>
+                                                                <option value="one">7:00pm</option>
+                                                                <option value="two">7:15pm</option>
+                                                                <option value="three">7:30pm</option>
+                                                                <option value="four">7:45pm</option>
+                                                                <option value="five">8:00pm</option>
+                                                                <option value="six">8:15pm</option>
+                                                                <option value="more">8:30pm</option>
+                                                            </select>
+                                                            <input type="submit" id="submit2" value="Book Table">
+                                                    </form>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+
+                <!-- <div class="modalRes modalRes--hidden">
+                    <div class="modal_Contents">
+                        <div class="modal_closeBar">
+                            <span>X</span>
+                        </div>
+                        <h1>Make a Reservation</h1>
+                        <form >
+                            <div>
+                            <label for="date"></label>
+                                <input type="date" id="date" name="trip-start" value="2021-04-29" min="2021-04-28" max="2021-12-31">
+                            </div>
+                            <label for="time"></label>
+                            <select id="time" name="time">
+                                <option value="none" disabled selected hidden>Time</option>
+                                <option value="one">7:00pm</option>
+                                <option value="two">7:15pm</option>
+                                <option value="three">7:30pm</option>
+                                <option value="four">7:45pm</option>
+                                <option value="five">8:00pm</option>
+                                <option value="six">8:15pm</option>
+                                <option value="more">8:30pm</option>
+                            </select>
+                            <label for="people"></label>
+                                <select id="people" name="people">
+                                    <option value="none" disabled selected hidden>Number of People</option>
+                                    <option value="one">1 Person</option>
+                                    <option value="two">2 People</option>
+                                    <option value="three">3 People</option>
+                                    <option value="four">4 People</option>
+                                    <option value="five">5 People</option>
+                                    <option value="six">6 People</option>
+                                    <option value="more">More</option>
+                                </select>
+
+                            <input class="submit" type = "submit" value="Sign Up">   
+                        </form>
+                    </div>
+                </div> -->
+
+                                             <!-- END OF RESERVATION PAGE 1 -->
+
+            <div class="Cont">
+                <section class="contact">
+                    <div class="contentCont">
+                        <h2>Contact Us</h2>
+                        <p>A globally recognized Indian restaurant serving the sublime taste of the North West Frontier unchanged and unmatched since 1978. We’re in the business of making people feel special. In everything we do, we have to ask ourselves if we’re putting the Guest first and making sure they’ll come back for more. </p>
+                    </div>
+                    <div class="containerCont">
+                        <div class="contactinfo">
+                            <div class="boxCont">
+                                <div class="iconCont"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                <div class="textCont">
+                                        <h3>Address</h3>
+                                        <p>The Eatery Restaurant,<br>Sector-29,<br>
+                                        Gurgaon-122001</p>
+                                </div> 
+                            </div>
+                            <div class="boxCont">
+                                <div class="iconCont"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                <div class="textCont">
+                                    <h3>Phone</h3>
+                                    <p>+91 7011184384</p>
+                                    <p>+91 9205961663</p>
+                                </div> 
+                        </div>
+                        <div class="boxCont">
+                            <div class="iconCont"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                            <div class="textCont">
+                                <h3>Email</h3>
+                                <a href="mailto:yash.mehta.19cse@bmu.edu.in"><p>yash.mehta.19cse@bmu.edu.in</p></a>
+                                <a href="mailto:yash.gautam.19cse@bmu.edu.in"><p>yash.gautam.19cse@bmu.edu.in</p></a>
+                                <a href="mailto:vaiebhavv.baid.19cse@bmu.edu.in"><p>vaiebhavv.baid.19cse@bmu.edu.in</p></a>
+                            </div> 
+                    </div>
+                        </div>
+                        <div class="contactform">
+                            <form id="contsubmitform" onsubmit="myFunction()">
+                                <h2>Send Message</h2>
+                                <div class=inputBox>
+                                    <input type="text" required>
+                                     <span>Full Name</span>
+                                </div>
+
+                                <div class=inputBox>
+                                    <input type="email" required>
+                                    <span>Email</span>
+                                </div>
+
+                                <div class=inputBox>
+                                    <textarea required="required"></textarea>
+                                      <span>Type your Message...</span>                                   
+                                </div>
+
+                                <div class=inputBox>
+                                    <input class="inputCont" type="submit" name="" value= "Send">
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tabCont">
+                    <table align="center" cellpadding="0" cellspacing="0" class="social_table" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-tspace: 0; mso-table-rspace: 0; mso-table-bspace: 0; mso-table-lspace: 0;" valign="top">
+                        <tbody>
+                        <tr align="center" style="vertical-align: top; display: inline-block; text-align: center;" valign="top">
+                        <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-top: 5; padding-right: 5px; padding-left: 5px;" valign="top"><a href="https://www.facebook.com/yash.mehta.35574406" target="_blank"><img alt="Facebook" height="32" src="../images/facebook2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="Facebook" width="32"/></a></td>
+                        <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-top: 5; padding-right: 5px; padding-left: 5px;" valign="top"><a href="https://twitter.com/yash_mehtaa?s=08" target="_blank"><img alt="Twitter" height="32" src="../images/twitter2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="Twitter" width="32"/></a></td>
+                        <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-top: 5; padding-right: 5px; padding-left: 5px;" valign="top"><a href="https://www.instagram.com/yash_mehta05/" target="_blank"><img alt="Instagram" height="32" src="../images/instagram2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="Instagram" width="32"/></a></td>
+                        <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-top: 5; padding-right: 5px; padding-left: 5px;" valign="top"><a href="https://www.linkedin.com/in/yash-mehta-1235a5189/" target="_blank"><img alt="LinkedIn" height="32" src="../images/linkedin2x.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="LinkedIn" width="32"/></a></td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        <!-- </td>
+                        </tr>
+                        </tbody>
+                        </table> -->
+                    </div>
+                    <p class="lastCont">MADE WITH ❤️ & ☕ BY TEAM YVY</p>
+                    <script>
+                        function myFunction() {
+                          alert("The form has been submitted");
+                        }
+                    </script>
+                </section>
+            </div>
+            
+                                             <!-- END OF CONTACT PAGE -->
+    </body>
+</html>

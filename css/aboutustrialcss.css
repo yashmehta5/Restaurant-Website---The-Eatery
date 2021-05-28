@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap');
+
+:root{
+    --red: #ff5722;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s cubic-bezier(.37, 1.14, .26, 1.24);
+}
+
+*::selection{
+    background: var(--red);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.btn{
+    height: 4.5rem;
+    width: 18rem;
+    color: #fff;
+    border: .2rem solid#fff;
+    outline: .2rem solid #fff;
+    outline-offset: -.8rem;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    outline-offset: .4rem;
+    background: var(--red);
+}
+
+.headingAbout{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 .5rem;
+    padding-top: 6rem;
+    box-shadow: 0 .2rem .05rem rgba(0, 0, 0, .3);
+}
+
+.aboutA{
+    min-height: 100vh;
+
+}
+.aboutA .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    overflow-x: hidden;
+}
+.aboutA .row .image img{
+    width: 30rem; 
+    /* may need to change to 30vw */
+    /* filter: drop-shadow(.5rem .5rem .5rem rgba(0,0,0,0.5)); */
+}
+.aboutA .row .image .floating-image{
+    height: 38rem;
+    width: 38rem;
+    background-image: url('../images/about-main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 13px solid #000;
+    float: right;
+    position: relative;
+    top: .5rem; right: 2rem;
+}
+.aboutA .row .image .floating-image2{
+    position: absolute;
+    height: 22rem;
+    width: 22rem;
+    background-image: url('../images/about-inset.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 13px solid #000;
+    float: right;
+    top: 40px; right: 20px;
+}
+.aboutA .row .content{
+    padding: 1rem;
+}
+.aboutA .row .content h3{
+    font-size: 3.5rem;
+    color: var(--red);
+}
+.aboutA .row .content p{
+    font-size: 2rem;
+    color: #666;
+    padding: 1rem 0;
+}

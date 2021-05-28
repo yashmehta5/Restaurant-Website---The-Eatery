@@ -1,0 +1,29 @@
+@media screen and (max-width: 800px) { 
+ 
+    body { 
+    font-size: 1.5em; 
+    /*  
+        that will make fonts 150% larger, if you want smaller fonts on 	mobile use something like .9em for 90% smaller 
+    */ 
+    } 
+     
+    img { 
+        width: 100%; 
+        height: auto; 
+    } 
+     
+     
+    div { 
+        float: none; 
+        width: 100%; 
+        height: auto;	 
+    } 
+    /*  
+        add specific classes and id's, section,  
+        article, aside or whatever other tags you may have made columns  
+        with. 
+        You may need to zero out or reduce your margin and padding too. 
+    */ 
+     
+     
+    } 

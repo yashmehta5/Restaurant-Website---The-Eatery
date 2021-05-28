@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menustyle.css">
+    <title>Document</title>
+    <style>
+        df-messenger {
+            --df-messenger-bot-message: #878fac;
+            --df-messenger-button-titlebar-color: #df9b56;
+            --df-messenger-chat-background-color: #fafafa;
+            --df-messenger-font-color: white;
+            --df-messenger-send-icon: #878fac;
+            --df-messenger-user-message: #479b3d;
+        }
+    </style>
+
+</head>
+<body>
+    <script id = "chatbot "src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="DaTalkBot"
+    agent-id="ab5c0e17-7960-4ba1-bf67-ce558a86ae6f"
+    language-code="en"
+    ></df-messenger>
+
+    <div class="wrapper">
+        <div class="title">
+            <h4><span>fresh food for good health</span>our menu</h4>
+        </div>
+        <div class="menu">
+            <div class="single-menu">
+                <img src="Garlic_1_130x130.jpg" alt="">
+                <div class="menu-content">
+                    <h4>GARLIC BREAD<span>Rs.150</span></h4>
+                    <p>Freshly Baked Garlic Bread stuffed with camembert cheese, sweet corns & tangy and spicy jalapeños.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="Mixed_salad_130x130.jpg" alt="">
+                <div class="menu-content">
+                    <h4>MIXED SALAD<span>Rs.250</span></h4>
+                    <p>Mix Salad is a lovely medley of grilled chicken, lettuce leaves and cheese, tossed in a flavoursome vinaigrette. With addition of almonds.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="Wings_new.jpg" alt="">
+                <div class="menu-content">
+                    <h4>BBQ CHICKEN WINGS <span>Rs.400</span></h4>
+                    <p>Is an unbreaded chicken wing section  that is generally deep-fried and then coated or dipped in a sauce consisting of a vinegar-based cayenne pepper hot sauce and melted butter prior to serving.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="paneer-tikka_new.jpeg" alt="">
+                <div class="menu-content">
+                    <h4>Panner Tikka<span>Rs.350</span></h4>
+                    <p>Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="Spring_Roll_130x130.jpg" alt="">
+                <div class="menu-content">
+                    <h4>Spring Roll<span>Rs.300</span></h4>
+                    <p>A type of savoury food consisting of shredded vegetables wrapped in a pancake made from rice flour and then fried.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="Mughlai-Chicken-Biryani_2_130x130.jpg" alt="">
+                <div class="menu-content">
+                    <h4>Chicken Biryani<span>Rs300</span></h4>
+                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal animated bounceIn" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6 p-0">
+                                    <img src="https://images.pexels.com/photos/3617467/pexels-photo-3617467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                                </div>
+                                <div class="col-md-6 p-0">
+                                    <div class="formWrap">
+                                        <h1>Sign up for New Updates</h1>
+                                        <p><small>Get more ideas & inspiration in your inbox</small></p>
+                                        <hr>
+                                        <form>
+                                            <input type = "text" class="emailSignUp" placeholder="Email Address">
+                                            <input type = "password" placeholder="Password">
+                                            <input class="submit" type = "submit" value="Sign Up">             
+                                                            
+                                        </form>
+                                        <h6>Have an account? <a href="#">Log-in</a></h6>
+                                        <h5>Social Sign-In</h5>
+                                        <hr>
+                                        <p><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                            <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                            <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+            <script>
+                $(window).on('load', function(){
+                    setTimeout(function(){
+                        $('#myModal').modal('show')
+                    },1000)
+                })
+            </script>
+</body>
+</html>

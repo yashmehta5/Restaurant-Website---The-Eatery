@@ -1,0 +1,663 @@
+
+
+.blog-page {
+  width: 100%;
+    height: 1000px;
+    background: url("../images/v77_3.png");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  .ourblog{
+  margin-top: 20px;
+  margin-left: 170px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 29px;
+  left: 593px;
+  font-family: Love Ya Like A Sister;
+  font-weight: Regular;
+  font-size: 70px;
+  opacity: 1;
+  text-align: center;
+}
+
+.box{
+  float: left;
+    width: 700px;
+    height: 310px;
+    background: rgba(255,255,255,1);
+    position: relative;
+    /* top: 156px;
+    left: 90px;    */
+    margin-left: 136px;
+    margin-top: 220px;
+}
+.box1{
+  float: right;
+    width: 700px;
+    height: 310px;
+    background: rgba(255,255,255,1);
+    position: relative;
+    /* top: 156px;
+    left: 90px;    */
+    margin-right: 136px;
+    margin-top: 220px;
+}
+.box2{
+  float: left;
+    width: 700px;
+    height: 310px;
+    background: rgba(255,255,255,1);
+    position: relative;
+    /* top: 156px;
+    left: 90px;    */
+    margin-left: 136px;
+    margin-top: 50px;
+}
+.box3{
+  float: right;
+    width: 700px;
+    height: 310px;
+    background: rgba(255,255,255,1);
+    position: relative;
+    /* top: 156px;
+    left: 90px;    */
+    margin-right: 136px;
+    margin-top: 50px;
+}
+.image1{
+    width: 279px;
+    height: 306px;
+    background: url("../images/v77_4.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+   z-index: 0;
+    overflow: hidden;
+    opacity: 1;
+}
+.image2{
+    width: 279px;
+    height: 306px;
+    background: url("../images/v77_8.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+   z-index: 0;
+    overflow: hidden;
+    opacity: 1;
+}
+.image3{
+    width: 279px;
+    height: 306px;
+    background: url("../images/v77_11.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+   z-index: 0;
+    overflow: hidden;
+    opacity: 1;
+}
+.image4{
+    width: 279px;
+    height: 306px;
+    background: url("../images/v77_9.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+   z-index: 0;
+    overflow: hidden;
+    opacity: 1;
+}
+.heading{
+    width: 400px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  transform: translateX(6.5em) translateY(1.75em);
+  font-family: IBM Plex Mono;
+  font-weight: Regular;
+  font-size: 45px;
+  text-align: center;
+}
+
+.text{
+    width: 180px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 222px;
+  left: 486px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+  transform: translateX(-4em)translateY(-8.2em);
+}
+
+
+/* END OF BLOG PAGE */
+
+.reservationbg{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.reservationhead{
+  width: 100%;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  font-family: Cabin;
+  font-weight: Bold Italic;
+  font-size: 70px;
+  opacity: 1;
+  text-align: center;
+  top: 160px;
+  left: 40px;
+}
+
+.rboxoutlet{
+  width: 70%;
+height: 280px;
+border-radius: 20px;
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+opacity: 1;
+position: absolute;
+top: 350px;
+left: 310px;
+overflow: hidden;
+}
+.rbox{
+  width: 100%;
+height: 308px;
+background: rgba(255,255,255,1);
+opacity: 1;
+position: absolute;
+top: 0px;
+left: 0px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+overflow: hidden;
+}
+
+.rbox .hrRes{
+  width: 80%;
+  color: rgba(222,49,99,1);;
+
+  }
+
+.findtable{
+  width: 255px;
+color: rgba(222,49,99,1);
+position: absolute;
+top: 0px;
+left: 0px;
+font-family: Cabin;
+font-weight: Bold Italic;
+font-size: 40px;
+opacity: 1;
+left: 60px;
+text-align: left;
+}
+.details{
+  width: 255px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+
+  left: 348px;
+  font-family: Cabin;
+  font-weight: Medium;
+  font-size: 40px;
+  text-align: left;
+}
+input[type=number], select, textarea {
+  width: 20%; /* Full width */
+  height: 60px;
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-size: 25px;
+  float: left;
+  border-color: black;
+}
+#people{
+  margin-left: 60px;
+  margin-top: 140px;
+  width: 21%;
+  border: 2px solid #000;
+}
+#date{
+  height: 56px;
+  margin-top: 140px;
+  margin-left: 2px;
+  width: 19%;
+  font-size: 25px;
+  border: 2px solid #000;
+}
+#time{
+  margin-left: 265px;
+  margin-top: -60px;
+  width: 21%;
+  border: 2px solid #000;
+}
+.buttonoutlet {
+  width: 252px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  justify-content: center;
+  /* top: 70px;
+  left: 950px; */
+  margin-left: 902px;
+  margin-top: -62px;
+}
+
+.buttonr{
+    width: 244px;
+    height: 60px;
+    background: rgba(222,49,99,1);
+    opacity: 1;
+    justify-content: center;
+    text-align: center;
+    top: 0px;
+    border: 1px solid rgba(222,49,99,1);
+    border-radius: 10px;    
+    position: relative;
+}
+
+.buttonr h1{
+  margin: 10px 10px;
+  color: white; 
+  justify-content: center;
+}
+
+
+/* END OF RESERVATION-1 PAGE */
+.reservationbgo{
+  width: 100%;
+  height: 1200px;
+  background: rgba(0,0,0,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.reservationheado{
+  width: 100%;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  /* top: 136px; */
+  /* left: 685px; */
+  font-family: Cabin;
+  font-weight: Bold Italic;
+  font-size: 50px;
+  opacity: 1;
+  margin-left: 53px;
+  text-align: center;
+}
+
+.whitesq{
+  width: 60%;
+  height: 740px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  top: 136px;
+  left: 415px;
+  overflow: hidden;
+}
+
+.backbutton{
+  width: 105px;
+  color: rgba(222,49,99,1);
+  position: absolute;
+  top: -10px;
+  left: 40px;
+  font-family: Cabin;
+  font-weight: Bold Italic;
+  font-size: 33px;
+  opacity: 1;
+  text-align: left;
+}
+
+.header{
+  width: 475px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 40px;
+  left: 371px;
+  font-family: Cabin;
+  font-weight: Bold;
+  font-size: 45px;
+  opacity: 1;
+
+}
+
+.textr{
+  width: 928px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 133px;
+  left: 122px;
+  font-family: Cabin;
+  font-weight: normal;
+  font-weight: 530;
+  font-size: 30px;
+  opacity: 1;
+  text-align: center;
+}
+
+.whitesq .hrLine{
+  margin-top: 383px;
+  /* border: 1px solid #000;   */
+  width: 70%;
+  margin-left: 16%;
+  margin-right: 25%;
+}
+
+.whitesq .hrLine1{
+  margin-top: 167px;
+  /* border: 1px solid #000;   */
+  width: 70%;
+  margin-left: 16%;
+  margin-right: 25%;
+}
+
+.whitesq .hrLine2{
+  margin-top: -330px;
+  /* border: 1px solid #000;   */
+  width: 70%;
+  margin-left: 16%;
+  margin-right: 25%;
+}
+
+.standard{
+  width: 208px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 245px;
+  left: 247px;
+  font-family: Cabin;
+  font-weight: SemiBold;
+  font-size: 37px;
+  opacity: 1;
+  text-align: left;
+}
+
+.bar{
+  width: 208px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 405px;
+  left: 247px;
+  font-family: Cabin;
+  font-weight: SemiBold;
+  font-size: 37px;
+  opacity: 1;
+  text-align: left;
+}
+
+.counter{
+  width: 208px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 567px;
+  left: 247px;
+  font-family: Cabin;
+  font-weight: SemiBold;
+  font-size: 37px;
+  opacity: 1;
+  text-align: left;
+}
+
+.pinkbox{
+  width: 244px;
+  height: 78px;
+  background: rgba(222,49,99,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.select1{
+  width: 252px;
+  height: 78px;
+  background: url("../images/v117_34.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 267px;
+  left: 654px;
+  overflow: hidden;
+}
+.select2{
+  width: 252px;
+  height: 78px;
+  background: url("../images/v117_34.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 430px;
+  left: 654px;
+  overflow: hidden;
+}
+
+.select3{
+  width: 252px;
+  height: 78px;
+  background: url("../images/v117_34.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 593px;
+  left: 654px;
+  overflow: hidden;
+}
+
+/* END OF RESERVATION-2 PAGE */
+.whitesq1{
+  width: 50%;
+  height: 1300px;
+  background: #313131;
+  opacity: 1;
+  position: absolute;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  top: 136px;
+  left: 575px;
+  overflow: visible;
+}
+
+.findtable1{
+  width: 255px;
+  color: white;
+position: absolute;
+top: 0px;
+left: 0px;
+font-family: Cabin;
+font-weight: Bold Italic;
+font-size: 45px;
+opacity: 1;
+text-align: left;
+top: 10px;
+left: 60px;
+}
+
+.details1{
+  width: 350px;
+  color: rgba(222,49,99,1);
+  position: absolute;
+  top: 10px;
+  left: 348px;
+  font-family: Cabin;
+  font-weight: Medium;
+  font-size: 45px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+input[type=text], select, textarea {
+  width: 40%; /* Full width */
+  height: 60px;
+  color: #515751;
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-size: 30px;
+  float: left;
+}
+
+#fname{
+  margin-left: 75px;
+  margin-top: 150px;
+}
+#lname{
+  margin-left: 75px;
+  margin-right: 500px;
+  margin-top: 20px;
+}
+#code{
+  margin-left: 75px;
+  margin-top: 20px;
+  width: 11%;
+}
+#phno{
+  width: 29%;
+  margin-top: 20px;
+}
+#email{
+  margin-right: 170px;
+  margin-left: 75px;
+  margin-top: 20px;
+}
+#occasion{
+  margin-right: 170px;
+  margin-left: 75px;
+  margin-top: 20px;
+}
+#request{
+  margin-right: 170px;
+  margin-left: 75px;
+  margin-top: 20px;
+}
+input[type="checkbox"]{
+  width: 30px;
+  height: 30px;
+  color: rgba(222,49,99,1) ;
+}
+.check{
+  float: left;
+  font-size: 15px;
+  margin-left: 75px;
+  width: 40%;
+  color:  rgba(222,49,99,1);
+}
+.text1{
+  text-align: absolute;
+  margin-left: 50px;
+  margin-top: -35px;
+}
+.confirmation{
+  width: 445px;
+  height: 78px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 900px;
+  left:350px;
+  overflow: visible;
+
+}
+.finalpinkbox{
+  width: 431px;
+  height: 78px;
+  background: rgba(222,49,99,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 6px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.restname{
+  width: 45%;
+  height: 700px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  border-radius: 1px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  top: 115px;
+  left: 525px;
+  background-color: #313131;
+  color: white;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#more{
+  display: none;
+}
+#read,#read1 {
+  transition-duration: 0.4s;
+  border-radius: 3px;
+  border: none;
+  background: none;
+  font-family: Impact, Haettenschweiler, sans-serif;
+  font-size: 18px;
+  color:rgba(222,49,99,1);
+}
+#read:hover {
+  text-decoration: underline ;
+}

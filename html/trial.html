@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Eatery</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.
+    css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+      <script src="https://kit.fontawesome.com/2550a92b94.js" crossorigin ="anonymous"></script>
+
+      <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+       
+      <!-- icon Stylesheet -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/styleTrial.css">
+
+    <style>
+        df-messenger {
+            --df-messenger-bot-message: #ff5722;
+            --df-messenger-button-titlebar-color: #ff5722;
+            --df-messenger-chat-background-color: #fff;
+            --df-messenger-font-color: #fff;
+            --df-messenger-user-message: #2e5090;
+
+            --df-messenger-send-icon: #2e5090;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    
+    <script id = "chatbot "src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="DaTalkBot"
+    agent-id="ab5c0e17-7960-4ba1-bf67-ce558a86ae6f"
+    language-code="en"
+    ></df-messenger>
+
+                                    <!-- END OF CHATBOT CODE -->    
+
+    <div class="modal animated bounceIn" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 p-0">
+                            <img src="https://images.pexels.com/photos/3617467/pexels-photo-3617467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                        </div>
+                        <div class="col-md-6 p-0">
+                            <div class="formWrap">
+                                <h1>Sign up for New Updates</h1>
+                                <p><small>Get more ideas & inspiration in your inbox</small></p>
+                                <hr>
+                                <form>
+                                    <input type = "text" placeholder="Email Address">
+                                    <input type = "password" placeholder="Password">
+                                    <input class="submit" type = "submit" value="Sign Up">             
+                                                    
+                                </form>
+                                <h6>Have an account? <a href="#myModalL">Log-in</a></h6>
+                                <h5>Social Sign-In</h5>
+                                <hr>
+                                <p><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                    <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="modal animated bounceIn" id="myModalL" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 p-0">
+                            <img src="https://images.pexels.com/photos/3617467/pexels-photo-3617467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                        </div>
+                        <div class="col-md-6 p-0">
+                            <div class="formWrap">
+                                <h1>Log in</h1>
+                                <p><small>Get more ideas & inspiration in your inbox</small></p>
+                                <hr>
+                                <form>
+                                    <input type = "text" placeholder="Email Address">
+                                    <input type = "password" placeholder="Password">
+                                    <input class="submit" type = "submit" value="Sign In">             
+                                                    
+                                </form>
+                                <h6>Do not Have an account? <a href="signin.html">Sign-Up</a></h6>
+                                <h5>Social Sign-In</h5>
+                                <hr>
+                                <p><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                    <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(window).on('load', function(){
+            setTimeout(function(){
+                $('#myModal').modal('show')
+            },1000)
+        })
+    </script>
+
+
+                                            <!-- END OF SIGNUP -->
+
+                                           
+    <header>
+    <div class="header-1">
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>      Eatery</a>
+        <h3 class="call"><i class="fas fa-phone"></i>call now: +9205961663</h3>
+    </div>
+
+    <div class="header-2">
+
+        <div id="menu" class="fas fa-hamburger"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+    </header>
+
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="content">
+            
+            <h1>Savour the moment with
+                <span style="@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); 
+                font-family: 'Lobster', cursive;"
+                   class="txt-rotate"
+                   data-period="2000"
+                   data-rotate='[ "friends.", "family.", "colleagues."]'>
+                </span>
+              </h1>
+              <h3>Bliss on a Plate</h3>
+            <!-- <h1>Welcome <span>food</span> lovers</h1> -->
+            <a href="#"><button class="btn">Book Table</button></a>
+        </div>
+
+        <!-- <div class="shape">
+            
+        </div> -->
+    </section>
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+
+    <div id="about" class="about-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title"> About Us </h2>
+                        <h3>IT STARTED, QUITE SIMPLY, LIKE THIS...</h3>
+                        <p>  Grills has developed to incorporate four superb takeout areas in New Delhi with additional to come sooner rather than later.  </p>
+
+                        <p>Our group takes pride in the way that we can furnish our new and faithful clients with extraordinary tasting Indian-roused nourishment that is not normal for that at some other Indian eatery you visit. </p>
+
+                        <p> We perceive that a few people are as yet searching for the run of the mill Indian nourishment, and that is fine with us.</p>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <div class="about-images">
+                            <img class="about-main" src="/images/about-main.jpg" alt="About Main Image">
+                            <img class="about-inset" src="/images/about-inset.jpg" alt="About Inset Image">
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+
+    <!-- <section class="about" id="about">
+        <h1 class="heading"><span>About us</span></h1>
+
+    <div class="row">
+        <div class="content">
+                <h3>Let's satisfy your hunger with our tasty dishes</h3>
+                <p> Grills has developed to incorporate four superb takeout areas in New Delhi with additional to come sooner rather than later. <br>Our group takes pride in the way that we can furnish our new and faithful clients with extraordinary tasting Indian-roused <br>nourishment that is not normal for that at some other Indian eatery you visit. We perceive that a few people are as yet <br> searching for the run of the mill Indian nourishment, and that is fine with us.</p>
+                <a href="#"><button class="btn">Learn more</button></a>
+        </div>
+        <div class="image">
+            <img src="../images/girl-chef.png" alt="">
+        </div>
+    </div>
+    </section> -->
+
+    <!-- about section ends -->
+
+    <!-- dish section starts -->
+
+    <section class="dish" id="menu">
+    <h1 class="heading"><span>Menu</span></h1>
+
+    <ul class="controls">
+        <li class="buttons button-active" data-filter="all">all</li>
+        <li class="buttons" data-filter="sandwhich">Starters</li>
+        <li class="buttons" data-filter="cake">Main</li>
+        <li class="buttons" data-filter="juice">Drinks</li>
+        <li class="buttons" data-filter="chocolate">Dessert</li>
+    </ul>
+
+    <div class="image-container">
+        <div class="image sandwhich">
+            <img src="../images/garlicBreadLatest.jpg" alt="">
+            <a href="#">Garlic Bread</a>
+        </div>
+        <div class="image sandwhich">
+            <img src="../images/mixedsaladlatest.jpg" alt="">
+            <a href="#">Mixed Salad</a>
+        </div>
+        <div class="image sandwhich">
+            <img src="../images/sandwich3.jpg" alt="">
+            <a href="#">sandwhich</a>
+        </div>
+        <div class="image sandwhich">
+            <img src="../images/paneerTikkaLatest.jpg" alt="">
+            <a href="#">paneer tikka</a>
+        </div>
+
+        <div class="image cake">
+            <img src="../images/dalmakhaniLatest.jpg" alt="">
+            <a href="#">Dal Makhani</a>
+        </div>
+        <div class="image cake">
+            <img src="../images/shahipaneerlatest.jpg" alt="">
+            <a href="#">Shahi paneer</a>
+        </div>
+        <div class="image cake">
+            <img src="../images/pizzalatest.jpg" alt="">
+            <a href="#">Pizza</a>
+        </div>
+        <div class="image cake">
+            <img src="../images/burgerlatest.jpg" alt="">
+            <a href="#">Burger</a>
+        </div>
+
+        <div class="image juice">
+            <img src="../images/mangojuicelatest.jpg" alt="">
+            <a href="#">Mango Juice</a>
+        </div>
+        <div class="image juice">
+            <img src="../images/strawberrymilkshakelatest.jpg" alt="">
+            <a href="#">Strawberry Milkshake</a>
+        </div>
+
+        <div class="image chocolate">
+            <img src="../images/chocolate.jpg" alt="">
+            <a href="#">chocolate</a>
+        </div>
+        <div class="image chocolate">
+            <img src="../images/cake3.jpg" alt="">
+            <a href="#">Cake</a>
+        </div>
+    </div>
+
+    </section>
+
+    <!-- dish section ends -->
+
+    <!-- chef section starts -->
+    <section class="chef" id="chef">
+
+        <h1 class="heading"> <span> expert chefs </span> </h1>
+        
+        <div class="box-container">
+        
+            <div class="box">
+                <img src="../images/chef1.jpg" alt="">
+                <div class="info">
+                    <h3>john deo</h3>
+                    <span>head chef</span>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="../images/chef2.jpg" alt="">
+                <div class="info">
+                    <h3>john deo</h3>
+                    <span>head chef</span>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="../images/chef3.jpg" alt="">
+                <div class="info">
+                    <h3>john deo</h3>
+                    <span>head chef</span>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="../images/chef4.jpg" alt="">
+                <div class="info">
+                    <h3>john deo</h3>
+                    <span>head chef</span>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        </section>
+        
+    <!-- chef section ends -->
+
+                                                <!-- START OF RESERVATION -->
+      <div class="reservationPage" id="Rpage">
+                    <h1>Reservations</h1>
+                    <div class="reserveBoxOne">
+                        <p>Make a Reservation</p>
+                        <form>
+                            <div class="reservationDate">
+                                <div class="dateIcon">
+                                    <img src="../images/calendar_icon_resized.png">
+                                </div>
+                                <!-- <p class="ResAlign">Apr 5 2021</p> -->
+                                <input type="date" id="date" class="InputBox" name="Date" value="2021-04-29" min="2021-04-28" max="2021-12-31" style="font-size: 1.7rem;">
+                            </div>
+                            <div class="reservationTime">
+                                <div class="TimeIcon">
+                                    <img src="../images/clock_icon_resized.png">
+                                </div>
+                                <input type="text" placeholder="Time" class="InputBox" name="Time" style="font-size: 2rem;">
+                                <!-- <p class="ResAlign">8:00 pm</p> -->
+                            </div>
+                            <div class="customerNo">
+                                <div class="customerIcon">
+                                    <img src="../images/person_icon_resized.png">
+                                </div>
+                                <input type="text" name="number" placeholder="Number of People" class="InputBox" style="font-size: 2rem;">
+                                <!-- <p class="ResAlign">2 people</p> -->
+                            </div>
+                            <div class="bookTable">
+                                <input type="submit" value="Register">
+                               <a href="reservation.html" id="getPopUpOne"><span id="getPopUpOne">Find a Table</span></a>
+                                <!-- <button id="show-modal">Find Table</button> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                                                <!-- END OF RESERVATION -->
+
+    <!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading"> our food <span>gallery</span> </h1>
+    
+    <div class="box-container">
+    
+        <div class="box" data-aos="fade-up">
+            <img src="../images/pizzagallerylatest.jpg" alt="" >
+            <h3>Pizza</h3>
+        </div>
+    
+        <div class="box" data-aos="fade-up">
+            <img src="../images/chickenlatest.jpg" alt="">
+            <h3>Chicken</h3>
+        </div>
+    
+        <div class="box" data-aos="fade-up">
+            <img src="../images/rollslatest.jpg" alt="">
+            <h3>Paneer Rolls</h3>
+        </div>
+    
+        <div class="box" data-aos="fade-up">
+            <img src="../images/chillipotatolatest.jpg" alt="">
+            <h3>Chilli Potato</h3>
+        </div>
+    
+        <div class="box" data-aos="fade-up">
+            <img src="../images/strawberrycakelatest.jpg" alt="">
+            <h3>Strawberry Cake</h3>
+        </div>
+    
+        <div class="box" data-aos="fade-up">
+            <img src="../images/chocolatecakelatest.jpg" alt="">
+            <h3>Chocolate Cake</h3>
+        </div>
+        <div class="box" data-aos="fade-up">
+            <img src="../images/milkshakelatest.jpg" alt="">
+            <h3>Strawberry Milkshake</h3>
+        </div>
+        <div class="box" data-aos="fade-up">
+            <img src="../images/kebablatest.jpg" alt="">
+            <h3>Kebab</h3>
+        </div>
+        <div class="box" data-aos="fade-up">
+            <img src="../images/nachoslatest.jpg" alt="">
+            <h3>Cheesy Nachos</h3>
+        </div>
+        <div class="box" data-aos="fade-up">
+            <img src="../images/quesadillaLatest.jpg" alt="">
+            <h3>Quesadilla</h3>
+        </div>
+    
+    </div>
+    
+    </section>
+    
+    <!-- gallery section ends -->
+
+    <!-- speciality section starts  -->
+
+<section class="speciality" id="speciality">
+
+    <h1 class="heading"> <span> our speciality </span> </h1>
+    
+    <div class="box-container">
+    
+        <div class="box">
+            <img src="../images/img1.jpg" alt="">
+            <div class="info">
+                <h3>tasty hamburger</h3>
+                <p>upto 25% discount</p>
+                <a href="#"><button class="btn"> check out </button></a>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="../images/img2.jpg" alt="">
+            <div class="info">
+                <h3>fresh breakfast</h3>
+                <p>upto 25% discount</p>
+                <a href="#"><button class="btn"> check out </button></a>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="../images/img3.jpg" alt="">
+            <div class="info">
+                <h3>veg sandwich</h3>
+                <p>upto 25% discount</p>
+                <a href="#"><button class="btn"> check out </button></a>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="../images/img4.jpg" alt="">
+            <div class="info">
+                <h3>delicious pizza</h3>
+                <p>upto 25% discount</p>
+                <a href="#"><button class="btn"> check out </button></a>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="icons-container">
+      
+        <div class="icons">
+            <i class="fas fa-tags"></i>
+            <h3>heavy discounts</h3>
+            <p>We provide attractive discounts regularly and </p>
+        </div>
+    
+        <div class="icons">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>money returns</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quisquam.</p>
+        </div>
+    
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <h3>24 x 7 support</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quisquam.</p>
+        </div>
+    
+    </div>
+    
+    </section>
+    
+    <!-- speciality section ends -->
+
+    <!-- newsletter section starts  -->
+
+<section class="newsletter">
+
+    <h1>newsletter</h1>
+    <p>subscribe for latest updates</p>    
+    <form action="">
+        <input type="email" placeholder="enter your email">
+        <input type="submit" value="subscribe">
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <img src="images/shape-top.png" alt="">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 class="heading"> <span>why choose us?</span> </h3>
+            <p>We provide exceptional delivery service 24/7 from our Polish centre of excellence, with a targeted service level of 99.8%.</p>
+        </div>
+
+        <div class="box">
+            <h3 class="heading"> <span>locations</span> </h3>
+            <a href="#">Gurgaon</a>
+            <a href="#">Pune</a>
+            <a href="#">Hyderabad</a>
+            <a href="#">Chandigarh</a>
+        </div>
+
+        <div class="box">
+            <h3 class="heading"> <span>quick links</span> </h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">dishes</a>
+            <a href="#">chef</a>
+            <a href="#">speciality</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3 class="heading"> <span>contact us</span> </h3>
+            <p> <i class="fas fa-map-marker-alt"></i> Gurgaon </p>
+            <p> <i class="fas fa-envelope"></i> vayy@gmail.com </p>
+            <p> <i class="fas fa-globe"></i> www.eatery.com </p>
+        </div>
+    </div>
+
+<h1 class="credit"> created by <span>VAYY</span> | all rights reserved! </h1>
+
+</section>
+
+<!-- footer section ends -->
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

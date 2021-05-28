@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap');
+
+.heady{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+.wrapper{
+    display: inline-flex;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -160px;
+    /* transform:translateX(-50%) translateY(-150%); */
+    z-index: 0;
+
+}
+.wrapper .static-txt{
+    color: #fff;
+    font-size: 75px;
+    font-family: Lobster;
+    font-weight: 70;
+    margin-left: -530px;
+    white-space: nowrap;
+}
+.wrapper .dynamic-txts{
+    margin-left: 15px;
+    line-height: 74px;
+    margin-top: 16px;
+    height: 90px;
+    font-family: Lobster;
+    font-weight: 70;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.dynamic-txts li{
+    color: #FF4500;
+    list-style: none;
+    font-size: 75px;
+    font-weight: 10;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(3) infinite;
+}
+
+/* .dynamic-txts li:nth-child(0){
+    margin-top: 7.5px;
+}
+.dynamic-txts li:nth-child(1){
+    margin-top: 7.5px;
+}
+.dynamic-txts li:nth-child(2){
+    margin-top: 7.5px;
+} */
+
+
+
+
+
+@keyframes slide {
+    100%{
+        top: -205px;
+    }    
+}
+
+.dynamic-txts li span{
+    position: relative;
+}
+
+.dynamic-txts li span::after{
+    content: "";
+    position: relative;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #FF4500;
+    animation: typing 2s steps(20) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }    
+}
+
+.homepage2{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.homepage2 p{
+    color: #FF4500;
+    font-size: 67px;
+    font-family: Neuton;
+    font-weight: 50;
+    margin-top: 135px;
+    margin-left: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-52%) translateY(-150%);
+}
+
+.homepage2 a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffff;
+    background: #FF4500;
+    font-size: 2em;
+    border: 2px ;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: 0.4s linear;
+    transform: translateX(25.3em) translateY(18em);
+}
+
+.homepage2 a:hover{
+    color: #ff7979;
+    background: none;
+    border: 2px solid #ff7989;
+}
+
+/* .homepage3 a{       book my table animation failed attempt
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: translateX(25.3em) translateY(18em);
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #0162c8, #55e7fc);
+}
+
+span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+} */
+
+
+                                        /*END OF ANIMATIONS FOR HOME PAGE*/

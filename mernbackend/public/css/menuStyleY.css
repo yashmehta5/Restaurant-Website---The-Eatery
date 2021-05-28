@@ -1,0 +1,36 @@
+.carousel .carousel-cell .MenuTitleBox {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.carousel .carousel-cell .MenuTitleBox img{
+    width: 50%;
+    height: 50%;
+}
+
+.carousel .carousel-cell .MenuTitleBox .startersBox{
+    text-align: center;
+    margin-left: -17px;
+    background-color: orange ;
+    float: left;
+}
+
+.carousel .carousel-cell .MenuTitleBox .MainBox{
+    margin-left: 17px;
+    background-color: blue ;
+    float: left;
+}
+
+.carousel .carousel-cell .MenuTitleBox .DessertBox{
+    margin-left: 17px;
+    background-color: red ;
+    float: right;
+}
+
+.carousel .carousel-cell .MenuTitleBox .DrinksBox{
+    margin-left: 17px;
+    background-color: maroon ;
+    float: right;
+
+}

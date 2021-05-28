@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation 2</title>
+    <link rel="stylesheet" href="/css/style_reservation.css">
+</head>
+<body>
+    <div class="reservationbgo">
+        <div >
+            <h1 class="reservationheado">Reservation at The Eatery | Gurgaon</h1>
+        </div>
+        <div class="whitesq1">
+            <div >
+                <h3 class="findtable1">1.Find Table</h3>
+                <h3 class="details1">2. Your Details</h3>
+            </div>
+            <div>
+                <form>
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="firstname" placeholder="First name.." required>
+
+                    <label for="lname"></label>
+                    <input type="text" id="lname" name="lastname" placeholder="Last name.." required>
+
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value="none" disabled selected hidden>Code</option>
+                        <option value="India">+91</option>
+                        <option value="dubai">+971</option>
+                        <option value="srilanka">+94</option>
+                        <option value="usa">+1</option>
+                    </select>
+
+                    <label for="phno"></label>
+                    <input type="text" id="phno" name="phone" placeholder="Phone number" required>
+
+                    <label for="email"></label>
+                    <input type="text" id="email" name="mail" placeholder="Email" required>
+
+                    <label for="occasion"></label>
+                    <select id="occasion" name="occasion"  >
+                        <option value="none" disabled selected hidden>Select an occasion (optional)</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="Anniversary">Anniversary</option>
+                        <option value="date">Date</option>
+                        <option value="special">Special Occasion</option>
+                        <option value="business">Business Meal</option>
+                    </select>
+                    
+                    <label for="request"></label>
+                    <input type="text" id="request" name="request" placeholder="Add a special request (optional)" >
+                    <div class="check">      
+                        <input type="checkbox" id="update" name="update" value="updates">
+                        <label for="update" ><p class="text1">Yes, I want to get text updates and reminders about my reservations.</p> </label><br>
+
+                        <input type="checkbox" id="offer" name="offer" value="offers">
+                        <label for="offer"><p class="text1"> Sign me up to receive dining offers and news from this restaurant by email.</p></label><br>
+
+                        <input type="checkbox" id="opentable" name="opentable" value="opentable">
+                        <label for="opentable"><p class="text1">Sign me up to receive dining offers and news from OpenTable by email.</p</label>
+                    </div>  
+                </form>
+                <div class="restname">
+                    <h1 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 40px;">The Eatery</h1>
+                    <h3 style="font-size: 30px;@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap');font-family: 'KoHo', sans-serif;font-weight: 200;">What to know before you go</h3>
+                    <h3 style="font-size: 25px;font-family: 'KoHo', sans-serif;font-weight: 200;">Important dining information</h3>
+                    <p style="font-size:18px;font-family: 'KoHo', sans-serif;font-weight: 200;">
+                        We have a 15 minute grace period. Please call us if you are running later than 15 minutes after your reservation time.
+                        <br><br>
+                        We may contact you about this reservation, so please ensure your email and phone number are up to date.<span id="dots">...</span>
+                        <span id="more"><br><br>
+                        Your table will be reserved for 1 hour 45 minutes for parties of up to 2; 2 hours for parties of up to 4; 2 hours 30
+                        minutes for parties of up to 6; and 2 hours 45 minutes for parties of 7+.</span>
+                    </p>
+                    <button type="button" id="read" onclick="read()">+ Read more</button>
+                    <script type="text/javascript">
+                        var i = 0;
+                        function read() {
+                            if (!i) {
+                                document.getElementById("more").style.display = "inline";
+                                document.getElementById("dots").style.display = "none";
+                                document.getElementById("read").innerHTML = "+ Read less";
+                                i = 1;
+                            }
+                            else {
+                                document.getElementById("more").style.display = "none";
+                                document.getElementById("dots").style.display = "inline";
+                                document.getElementById("read").innerHTML = "+ Read more";
+                                i = 0;
+                            }
+                        }
+                    </script>
+                    <h3 style="font-size: 25px;font-family: 'KoHo', sans-serif;font-weight: 200;">A note from the restaurant</h3>
+                    <p style="font-size:18px;font-family: 'KoHo', sans-serif;font-weight: 200;">
+                    Cancellation Policy: Cancellations must be done 24 hrs in advance. Cancelling your entire party within 24 hrs or if you
+                    no show will result in a charge of Rs.100 per person. Please note that all reservations are dependent on Gurgaon indoor dining
+                    mandates. We will contact you in the event that we have to cancel your reservation.<br>---<span id="dots1"></span><br>
+                    <span id="more1">We can not accommodate multiple reservations to be seated next to each other. For larger parties please call us directly
+                    to speak to our Special Events team</span>
+                    </p>
+                    <button type="button " id="read1" onclick="read1()">+ Read more</button>
+                    <script type="text/javascript">
+                        var i = 0;
+                        function read1() {
+                            if (!i) {
+                                document.getElementById("more1").style.display = "inline";
+                                document.getElementById("dots1").style.display = "none";
+                                document.getElementById("read1").innerHTML = "+ Read less";
+                                i = 1;
+                            }
+                            else {
+                                document.getElementById("more1").style.display = "none";
+                                document.getElementById("dots1").style.display = "inline";
+                                document.getElementById("read1").innerHTML = "+ Read more";
+                                i = 0;
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+            <footer>
+                <div class="confirmation">
+                    <div class="finalpinkbox">
+                        <input type="submit" value="Submit">
+                        <!-- <h1 style="color: white;text-align: center;">Confirm Reservation</h1> -->
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="../css/style_reservation.css">
+</head>
+<body>
+    
+    <div class="reservationbg">
+        <div>
+            <h1 class="reservationhead">Reservation at The Eatery | Gurgaon</h1>
+        </div>
+        <div class="rboxoutlet">
+            <div class="rbox">
+                <h3 class="findtable">1.Find Table</h3>
+                <h3 class="details">2. Your Details</h3>
+                <div>
+                    <form >
+                        <label for="people"></label>
+                            <select id="people" name="people">
+                                <option value="none" disabled selected hidden>Number of People</option>
+                                <option value="one">1 Person</option>
+                                <option value="two">2 People</option>
+                                <option value="three">3 People</option>
+                                <option value="four">4 People</option>
+                                <option value="five">5 People</option>
+                                <option value="six">6 People</option>
+                                <option value="more">More</option>
+                            </select>
+                        <div>
+                        <label for="date"></label>
+                            <input type="date" id="date" name="trip-start" value="2021-04-29" min="2021-04-28" max="2021-12-31">
+                        </div>
+                        <label for="time"></label>
+                        <select id="time" name="time">
+                            <option value="none" disabled selected hidden>Time</option>
+                            <option value="one">7:00pm</option>
+                            <option value="two">7:15pm</option>
+                            <option value="three">7:30pm</option>
+                            <option value="four">7:45pm</option>
+                            <option value="five">8:00pm</option>
+                            <option value="six">8:15pm</option>
+                            <option value="more">8:30pm</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="buttonoutlet">
+                    <div class="buttonr">
+                       <a href="reservationone.html" style="text-decoration: none;"><h1>Book A Table</h1></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
