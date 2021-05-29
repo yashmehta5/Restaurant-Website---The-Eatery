@@ -26,7 +26,4 @@ It was created as a part of a 2nd year semester project at BML Munjal University
 * 👤 Yash Mehta
 * 👤 Yash Gautam
 * 👤 Vaiebhavv Baid
-👤 Yash Mehta
-👤 Yash Mehta
-👤 Yash Gautam
-👤 Vaiebhavv Baid
+
