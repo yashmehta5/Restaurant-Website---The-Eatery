@@ -6,7 +6,6 @@ It was created as a part of a 2nd year semester project at BML Munjal University
 * HTML
 * CSS
 * JS
-* BOOTSTRAP
 
 # Features
 * Chat Bot For Booking a Table
@@ -24,6 +23,10 @@ It was created as a part of a 2nd year semester project at BML Munjal University
 ![alt text](https://github.com/yashmehta5/Restaurant-Website---The-Eatery/blob/master/Capture3.JPG)
 
 ## Contributors
+* 👤 Yash Mehta
+* 👤 Yash Gautam
+* 👤 Vaiebhavv Baid
+👤 Yash Mehta
 👤 Yash Mehta
 👤 Yash Gautam
 👤 Vaiebhavv Baid
